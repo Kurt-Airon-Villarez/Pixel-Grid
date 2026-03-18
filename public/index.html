@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Grid - Collaborative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Collaborative Pixel Grid</h1>
+    <canvas id="pixelCanvas" width="512" height="512"></canvas>
+    <div class="color-buttons">
+      <button class="color-btn" data-color="#000000" style="background: #000000;"></button>
+      <button class="color-btn" data-color="#ff0000" style="background: #ff0000;"></button>
+      <button class="color-btn" data-color="#00ff00" style="background: #00ff00;"></button>
+      <button class="color-btn" data-color="#0000ff" style="background: #0000ff;"></button>
+      <button class="color-btn" data-color="#ffff00" style="background: #ffff00;"></button>
+      <button class="color-btn" data-color="#ff00ff" style="background: #ff00ff;"></button>
+      <button class="color-btn" data-color="#ffa500" style="background: #ffa500;"></button>
+      <button class="color-btn" data-color="#ffc0cb" style="background: #ffc0cb;"></button>
+    </div>
+    <div class="controls">
+      <button id="clearBtn" type="button">Clear Grid</button>
+      <span id="status">Connecting...</span>
+    </div>
+    <p>Draw with mouse/touch. Changes sync in real-time across all users!</p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
